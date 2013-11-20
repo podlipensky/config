@@ -1,0 +1,27 @@
+[credential]
+        helper = cache --timeout 3600
+[color]
+        diff = auto
+        branch = auto
+        status = auto
+        sh = auto
+[alias]
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen%cn%Creset %Cblue%cr%Creset' --abbrev-commit --date=relative
+        co = checkout
+        br = branch
+        st = status
+        ci = commit
+        df = diff
+        dc = diff --cached
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        ls = ls-files
+        # Show files ignored by git:
+        ign = ls-files -o -i --exclude-standard
+[user]
+        name = <your name here>
+        email = <your email here>
+[rerere]
+        enabled = true
+[branch]
+        autosetuprebase = always
